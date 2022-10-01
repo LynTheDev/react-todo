@@ -28,7 +28,7 @@
   cursor: pointer;
 
   .icon {
-    width: 20px;
+    width: 17px;
   }
 }
 
@@ -40,4 +40,25 @@
 
   transform: rotate(35deg);
 
+}
+
+.save-btn {
+  background-image: linear-gradient(to right, #1ea8da, #81cce8);
+  padding: 10px;
+  border-radius: 7px 7px 7px 7px;
+
+  left: 50%;
+  transform: translate(-50%, 300%);
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.save-btn:hover {
+  box-shadow: #202020 0 13px 27px -5px, #313131 0px 8px 16px -8px;
+}
+
+.text {
+  color: white;
 }

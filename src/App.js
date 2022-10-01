@@ -48,7 +48,7 @@ const App = () => {
 
           <footer className='animate-light delay-slight'>
             <p className='id-text fixed bottom-left'>© Todo App <br />Under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</p>
-            <div className='fixed bottom-right icons animate-light'>
+            <div className='fixed top-right icons animate-light'>
                 <img src='/img/github.svg' className='margin-right icons animate-light delay-slight' alt="github" />
                 <img src='/img/twitter.svg' className='icons animate-light delay-long' alt="twitter" />
             </div>
