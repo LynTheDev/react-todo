@@ -1,0 +1,27 @@
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.flex-center {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+}
+
+.margin {
+    margin: 2rem 1rem 1rem;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}

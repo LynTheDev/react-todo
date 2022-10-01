@@ -1,0 +1,38 @@
+.id-text {
+  font-size: 13px;
+  opacity: 0.3;
+  padding: 3px 3px 0;
+
+  color: white;
+}
+
+.trash-btn {
+
+  padding: 5px 9px;
+
+  border-radius: 50%;
+}
+
+.ico {
+  padding-top: 4px;
+}
+
+.todo-text {
+  font-family: open-sans, serif;
+  color: white;
+
+  padding: 0 5px 5px;
+}
+
+.card {
+  width: 42rem;
+
+}
+
+.card:hover {
+  transition: 0.5s;
+
+  box-shadow: #202020 0 13px 27px -5px, #313131 0px 8px 16px -8px;
+
+  transform: scale(1.01);
+}

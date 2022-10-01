@@ -1,0 +1,43 @@
+.input {
+  border: none;
+  border-radius: 7px 0 0 7px;
+
+  padding: 10px;
+  width: 40rem;
+
+  color: white;
+
+  background-color: #3a3939;
+
+  margin-top: 10rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  background-image: linear-gradient(to left, #1ea8da, #81cce8);
+  padding: 10px;
+
+  border-radius: 0 10px 10px 0;
+
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  .icon {
+    width: 20px;
+  }
+}
+
+.react-logo {
+  left: 4rem;
+  bottom: 4rem;
+
+  opacity: 0.1;
+
+  transform: rotate(35deg);
+
+}

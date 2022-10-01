@@ -1,0 +1,42 @@
+@media only screen and (max-width: 500px) {
+  #get-input {
+    width: 15rem;
+  }
+  #card {
+    width: 18rem;
+  }
+
+  #react {
+    width: 8rem;
+
+    left: 1rem;
+    bottom: 2rem
+  }
+}
+
+body {
+  background-color: #292929;
+  font-family: "Ubuntu", sans-serif;
+
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: unset;
+  border: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url("/public/fonts/Open_Sans/OpenSans-norm.ttf");
+}
