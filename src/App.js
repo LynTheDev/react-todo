@@ -1,4 +1,3 @@
-import SideNav from "./components/FixedNav";
 import AddTodo from "./components/AddTodo";
 import TODOS from "./data/todos.json";
 import Card from '@mui/material/Card';
