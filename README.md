@@ -1,4 +1,4 @@
-### <a href="httpr://nats-todo.netlify.app">nats-todo.netlify.app</a>
+### <a href="https://nats-todo.netlify.app">https://nats-todo.netlify.app</a>
 Done
 
 Or
