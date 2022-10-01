@@ -25,3 +25,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+.bottom-left {
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.bottom-right {
+    bottom: 0.5rem;
+    right: 0.5rem;
+
+    opacity: 0.3;
+}
+
+.margin-right {
+    margin-right: 0.5rem;
+}
