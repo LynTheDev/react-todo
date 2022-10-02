@@ -32,23 +32,16 @@
   }
 }
 
-.react-logo {
-  left: 4rem;
-  bottom: 4rem;
-
-  opacity: 0.1;
-
-  transform: rotate(35deg);
-
-}
-
 .save-btn {
-  background-image: linear-gradient(to right, #1ea8da, #81cce8);
+  background-color: #1ea8da;
   padding: 10px;
   border-radius: 7px 7px 7px 7px;
 
-  left: 50%;
-  transform: translate(-50%, 300%);
+  left: 0;
+  right: 0;
+  top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
 
   cursor: pointer;
 
@@ -57,6 +50,34 @@
 
 .save-btn:hover {
   box-shadow: #202020 0 13px 27px -5px, #313131 0px 8px 16px -8px;
+
+  transform: scale(1.07);
+}
+
+.save-btn-disabled {
+  background-color: #09526d;
+  padding: 10px;
+  border-radius: 7px 7px 7px 7px;
+
+  left: 0;
+  right: 0;
+  top: 7rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 47px;
+  height: 37px;
+
+  cursor: not-allowed;
+
+  transition: 0.5s;
+}
+
+.save-btn-disabled:hover {
+  box-shadow: #202020 0 13px 27px -5px, #313131 0px 8px 16px -8px;
+
+  transform: scale(1.07);
 }
 
 .text {

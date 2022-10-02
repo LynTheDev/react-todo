@@ -1,7 +1,11 @@
 import {useEffect, useState} from "react";
 
+import "../styles/SaveCard.scss"
+import "../styles/tooltips.scss"
+
 const AddTodo = ({todos, setTodos}) => {
     const [todo, setTodo] = useState("");
+    const [disabled, setDisabled] = useState(false);
 
     const handleInput = (e) => {
         setTodo(e.target.value);
@@ -36,14 +40,27 @@ const AddTodo = ({todos, setTodos}) => {
 
     const saveItems = () => {
         localStorage.setItem("todoItem", JSON.stringify(todos));
+
+        setDisabled(true);
+
+        setTimeout(() => {
+            setDisabled(false);
+        }, 2190)
     }
 
     return (
         <article>
             <section>
-                <button className='animate delay-long absolute save-btn' onClick={saveItems}>
-                    <p className='text'>Save</p>
-                </button>
+                <div className='tooltip'>
+                    <span className='absolute tooltip-text'><p className='small-text'>Save Todos</p></span>
+                    <button className={
+                        disabled ? 'animate delay-long absolute save-btn-disabled' : 'animate delay-long absolute save-btn'
+                    } disabled={disabled} onClick={saveItems}>
+                        <p className='text'>
+                            {disabled ? <p className='save-anim'>...</p> : 'Save'}
+                        </p>
+                    </button>
+                </div>
             </section>
             <section className='flex-center animate'>
                 <form onSubmit={handleSub}>

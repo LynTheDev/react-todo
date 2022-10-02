@@ -45,3 +45,28 @@
     opacity: 0.3;
   }
 }
+
+.save-anim {
+  animation: typewrite 0.8s steps(30,end) 0.4s infinite normal both;
+
+  overflow: hidden;
+
+  font-family: 'Source Code Pro', monospace;
+  font-size: 10px;
+
+  color: white;
+
+  margin-left: 0.4rem;
+
+  opacity: 0.6;
+}
+
+@keyframes typewrite {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19px;
+  }
+}
+
