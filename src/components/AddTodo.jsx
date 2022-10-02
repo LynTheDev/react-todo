@@ -53,7 +53,6 @@ const AddTodo = ({todos, setTodos}) => {
             <section>
                 <div className='tooltip'>
                     <span className='absolute tooltip-text'><p className='small-text'>Save Todos</p></span>
-                </div>
                     <button className={
                         disabled ? 'animate delay-long absolute save-btn-disabled' : 'animate delay-long absolute save-btn'
                     } disabled={disabled} onClick={saveItems}>
@@ -61,6 +60,7 @@ const AddTodo = ({todos, setTodos}) => {
                             {disabled ? <p className='save-anim'>...</p> : 'Save'}
                         </p>
                     </button>
+                </div>
             </section>
             <section className='flex-center animate'>
                 <form onSubmit={handleSub}>
