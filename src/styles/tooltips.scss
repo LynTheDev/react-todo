@@ -13,10 +13,6 @@
 
   font-family: open-sans, serif;
 
-  left: 0;
-  right: 0;
-  top: 4.3rem;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -25,9 +21,54 @@
   opacity: 0.7;
 }
 
+.tooltip .tooltip-text-no-arr {
+  visibility: hidden;
+
+  width: 120px;
+
+  background-color: #1e1e1e;
+  color: white;
+
+  text-align: center;
+  border-radius: 10px;
+
+  padding: 5px 0;
+
+  font-family: open-sans, serif;
+
+  margin-left: 1.5rem;
+  margin-right: auto;
+
+  opacity: 0.7;
+}
+
+
+.tooltip-save {
+  left: 0;
+  right: 0;
+  top: 4.3rem;
+}
+
+.tooltip-finish {
+  left: 31rem;
+  right: 0;
+  bottom: 0.1rem;
+}
+
+.tooltip-erase {
+  left: 31rem;
+  right: 0;
+  top: 0.1rem;
+}
+
 .tooltip:hover .tooltip-text {
   visibility: visible;
 }
+
+.tooltip:hover .tooltip-text-no-arr {
+  visibility: visible;
+}
+
 
 .tooltip .tooltip-text::after {
   content: "";
@@ -41,6 +82,20 @@
   border-width: 5px;
   border-style: solid;
   border-color: #1e1e1e transparent transparent transparent;
+}
+
+.tooltip .tooltip-text-no-arr::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 100%;
+
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #1e1e1e;
 }
 
 .small-text {

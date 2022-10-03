@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 
 import "../styles/SaveCard.scss"
-import "../styles/tooltips.scss"
 
 const AddTodo = ({todos, setTodos}) => {
     const [todo, setTodo] = useState("");
@@ -30,7 +29,8 @@ const AddTodo = ({todos, setTodos}) => {
                 ...todos,
                 {
                     id: todos.length + 1,
-                    text: todo
+                    text: todo,
+                    isDone: false
                 }
             ])
         }
@@ -52,7 +52,7 @@ const AddTodo = ({todos, setTodos}) => {
         <article>
             <section>
                 <div className='tooltip'>
-                    <span className='absolute tooltip-text'><p className='small-text'>Save Todos</p></span>
+                    <span className='absolute tooltip-text tooltip-save'><p className='small-text'>Save Todos</p></span>
                     <button className={
                         disabled ? 'animate delay-long absolute save-btn-disabled' : 'animate delay-long absolute save-btn'
                     } disabled={disabled} onClick={saveItems}>

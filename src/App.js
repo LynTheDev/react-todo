@@ -7,6 +7,8 @@ import {useState} from "react";
 import "./styles/app.scss"
 import "./styles/TodoCard.scss"
 
+import "./styles/tooltips.scss"
+
 const App = () => {
     const [todos, setTodos] = useState(TODOS);
 
@@ -31,13 +33,43 @@ const App = () => {
                                       <div className='flex-between'>
                                           <p className='id-text'>#{todo.id}</p>
 
-                                          <button className='trash-btn' onClick={() => {
+                                          <div className="tooltip">
+                                            <button className='trash-btn' onClick={() => {
                                               deleteTodo(todo.id)
-                                          }}>
+                                            }}>
                                               <img src='/img/trash.svg' className='ico' alt="delete" />
-                                          </button>
+
+                                              <span className="absolute tooltip-text-no-arr tooltip-erase">
+                                                    <p className="small-text">Remove</p>
+                                              </span>
+                                            </button>
+                                          </div>  
                                       </div>
-                                          <p className='todo-text'>{todo.text}</p>
+
+                                      <div className="flex-between">
+                                        <p className={
+                                            todo.isDone ? 'todo-text done' : 'todo-text'
+                                            }>{todo.text}</p>
+
+
+                                        <div className="tooltip">
+                                            <button className="trash-btn" onClick={() => {
+                                                const todoAfter = todos.filter(todo => todo.id);
+                                                todo.isDone = true;
+
+                                                setTodos(todoAfter);
+                                            }}>
+                                                <img src='/img/check-lg.svg' className={todo.isDone ? 'ico finished' : 'ico'} alt="update" />
+
+                                                <span className="absolute tooltip-text-no-arr tooltip-finish">
+                                                    <p className="small-text">
+                                                        {todo.isDone ? 'Task Done!' : 'Mark Complete'}
+                                                    </p>
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                      </div>
                                   </Card>
                               </div>
                           ))
